@@ -3,14 +3,14 @@ import React, { useState } from 'react'
 import Swal from 'sweetalert2'
 
 function Loginsignup() {
-    let [state,setState] = useState('Login');
+    let [state,setState] = useState('Logio n');
     let [name,setName] = useState("");
     let [email,setEmail] = useState("");
     let [password,setPassword] = useState("");
     let [arr,setarr] = useState([]);
     let [lemail,setLemail] = useState("");
     let [lpassword,setLpassword] = useState("");
-
+  
         function signup(){
             let obj={
                 name:name,
@@ -18,8 +18,9 @@ function Loginsignup() {
                 password:password
             }
             setarr([...arr,obj]);
-            console.log(arr);
-        }
+            setState("Login")
+
+          }
         function Login(){
             let data = arr.filter((el)=>el.email== lemail && el.password==lpassword)
             if(data.length>0){
@@ -121,10 +122,9 @@ function Loginsignup() {
   
        </div> 
   
-       <div className
-="inputBox"> 
+       <div className="inputBox"> 
   
-        <input type="submit" value="Login" onClick={signup} /> 
+        <input type="submit" value="Sign Up" onClick={signup} /> 
   
        </div> 
   
