@@ -42,8 +42,8 @@ function Project() {
                     <div className='container-fluid mt-5 d-flex flex-wrap gap-3'>
                         {arr.map((product, index) => (
 
-                          <div key={index} className="card mb-4" style={{ width: '18rem' }}>
-                                <img src={product.image} alt={product.name} className="card-img-top  h-75" style={{ width: '100%', height: '150px', objectFit: 'cover' }} />
+                          <div key={index} className="card mb-4" style={{ width: '18rem', height:'350px'}}>
+                                <img src={product.image} alt={product.name} className="card-img-top  h-50 img-fluid" />
                                 <div className="card-body">
                                     <h5 className="card-title">{product.name}</h5>
                                     <p className="card-text">Price: ${product.price}</p>
