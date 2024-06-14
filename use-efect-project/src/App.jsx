@@ -22,11 +22,20 @@ function App() {
   return (
     <div className="App">
       {login && 
-    <h1>Loding...</h1>}
-<div>
+    
+      <div id="preloader">
+    <div class="line"></div>
+  </div>
+  
+     }
+     
+<div >
 
      <Api arr={arr}/>
-    <button type="button" onClick={() => setState(!state)}>fetch</button>
+     <div className='text-center pt-4'>
+
+    <button type="button" className='btn btn-lg btn-outline-warning' onClick={() => setState(!state)}>Fetch</button>
+     </div>
 </div>
     
     </div>
