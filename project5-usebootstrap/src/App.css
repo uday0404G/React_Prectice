@@ -1,0 +1,46 @@
+#root {
+  max-width: 100%;
+display: flex;
+justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+
+
+
+
+header{
+
+  height: auto;
+  background-color: #ecfdff;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+#a{
+  display: none;
+transition: 2s  ease-in-out;
+}
+.footer_icon{
+  text-align: right;
+}
+
+#aa:hover #a{
+  display: block;
+}
+.aa{
+  background-color: #ecfdff; 
+}
+.aaa{
+  background:url(../public/img/subscribe_area.png) no-repeat  ; 
+background-size: cover;
+}
