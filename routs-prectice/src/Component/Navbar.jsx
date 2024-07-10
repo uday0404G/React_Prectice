@@ -1,25 +1,25 @@
-import { NavLink } from 'react-router-dom';
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
+import React from 'react'
+import { Container, Nav } from 'react-bootstrap'
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-
-function BasicExample() {
+import { NavLink } from 'react-router-dom';
+const Navbar1 = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
-      <Container>
-        <Navbar.Brand >React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
+    <>
+     <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
-           <NavLink  to={"/"} > <Navbar.Brand> Home</Navbar.Brand></NavLink>
-           <NavLink  to={"/men"} > <Navbar.Brand>Man</Navbar.Brand></NavLink>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/Man">Man</NavLink>
+            <NavLink to="/Women">Women</NavLink>
           </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  );
+        </Container>
+      </Navbar>
+    
+    </>
+  )
 }
 
-export default BasicExample;
+export default Navbar1
+

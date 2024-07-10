@@ -1,16 +1,14 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import BasicExample from './Component/Navbar'
-import Rout from './Routs/Rout'
 
+import Rout from './Routs/Rout'
+import Navbar1 from './Component/Navbar'
 
 function App() {
   return (
     <>
-            <BasicExample/>    
-            <Rout/>      
+    <Navbar1/>
+     <Rout/>
     </>
   )
 }
