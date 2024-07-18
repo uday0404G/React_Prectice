@@ -2,68 +2,16 @@ import React from 'react';
 
 const Features = () => {
   return (
-    <div className="container-fluid featurs py-5">
-      <div className="container py-5">
-        <div className="row g-4">
-          <div className="col-md-6 col-lg-3">
-            <div className="featurs-item text-center rounded bg-light p-4">
-              <div 
-                className="featurs-icon btn-square rounded-circle mb-5 mx-auto" 
-                style={{ backgroundColor: '#ffb524' }}
-              >
-                <i className="fas fa-car-side fa-3x text-white"></i>
-              </div>
-              <div className="featurs-content text-center">
-                <h5>Free Shipping</h5>
-                <p className="mb-0">Free on order over $300</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <div className="featurs-item text-center rounded bg-light p-4">
-              <div 
-                className="featurs-icon btn-square rounded-circle mb-5 mx-auto" 
-                style={{ backgroundColor: '#ffb524' }}
-              >
-                <i className="fas fa-user-shield fa-3x text-white"></i>
-              </div>
-              <div className="featurs-content text-center">
-                <h5>Security Payment</h5>
-                <p className="mb-0">100% security payment</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <div className="featurs-item text-center rounded bg-light p-4">
-              <div 
-                className="featurs-icon btn-square rounded-circle mb-5 mx-auto" 
-                style={{ backgroundColor: '#ffb524' }}
-              >
-                <i className="fas fa-exchange-alt fa-3x text-white"></i>
-              </div>
-              <div className="featurs-content text-center">
-                <h5>30 Day Return</h5>
-                <p className="mb-0">30 day money guarantee</p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-6 col-lg-3">
-            <div className="featurs-item text-center rounded bg-light p-4">
-              <div 
-                className="featurs-icon btn-square rounded-circle mb-5 mx-auto" 
-                style={{ backgroundColor: '#ffb524' }}
-              >
-                <i className="fa fa-phone-alt fa-3x text-white"></i>
-              </div>
-              <div className="featurs-content text-center">
-                <h5>24/7 Support</h5>
-                <p className="mb-0">Support every time fast</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <div class="container-fluid py-5">
+    <h1 class="text-center p-5 m-auto col-12 col-lg-10">It started with a simple idea: Create quality, well-designed products that I wanted myself.</h1>
+ <div class="container-fluid row">
+  <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-1"><img src="../public/images/men.jpg" alt="" class="img-fluid"/>
+  <h2 class="text-center">Shop Men's Collection</h2></div>
+ <div class="col-12 col-md-12 col-lg-12 col-xl-6 p-2"><img src="../public/images/women.jpg" alt="" class="img-fluid"/>
+<h2 class="text-center">Shop Women's Collection</h2></div>
+
+ </div>
+  </div>
   );
 };
 
