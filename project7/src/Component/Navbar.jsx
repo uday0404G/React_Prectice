@@ -1,53 +1,75 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
+// Import Bootstrap's JavaScript dependencies where needed, for example in your Navbar component:
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Navbar = () => {
   return (
     <>
-      <div className="container-fluid fixed-top">
-      <nav className="navbar navbar-light bg-white navbar-expand-xl">
-                    <a  className="navbar-brand">
-                        <h1 className=" display-6">Fruitables</h1>
-                    </a>
-                    <button className="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span className="fa fa-bars text-primary"></span>
-                    </button>
-                    <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
-                        <div className="navbar-nav mx-auto">
-                            <a  className="nav-item nav-link active">Home</a>
-                            <a className="nav-item nav-link">Shop</a>
-                          
-                            <div className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div className="dropdown-menu m-0 bg-secondary rounded-0">
-                                    <a className="dropdown-item">Cart</a>
-                                    <a className="dropdown-item">Chackout</a>
-                                    <a className="dropdown-item">Testimonial</a>
-                                    <a className="dropdown-item">404 Page</a>
-                                </div>
-                            </div>
-                            <a className="nav-item nav-link">Order Details</a>
-
-                            <a className="nav-item nav-link">Contact</a>
-                        </div>
-                        <div className="d-flex m-3 me-0">
-                            <button
-                                className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4"
-                                data-bs-toggle="modal" data-bs-target="#searchModal"id="se" ><i className="fas fa-search "
-                                     ></i></button>
-                            <a className="position-relative me-4 my-auto">
-                          
-                           
-                                
-                            
-                                </a>
-                            <a className="my-auto">
-                                <i className="fas fa-user fa-2x"></i>
-                            </a>
-                        </div>
-                    </div>
-                </nav>
-      </div>
+      <header>
+        <nav className="navbar navbar-expand-lg navbar-light ">
+          <div className="container">
+            <Link className="navbar-brand" to="/"><img src="../public/images/shoe-logo-new_300x300.avif" alt="" className="img-fluid"/></Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse text-center" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <Link className="nav-link text-dark active" to="/">HOME</Link>
+                </li>
+                <li className="nav-item dropdown">
+                  <Link className="nav-link text-dark dropdown-toggle" to="#" id="navbarDropdownMenuLinkMen" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    MEN
+                  </Link>
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkMen">
+                    <li><Link className="dropdown-item" to="men.html">MEN</Link></li>
+                    <li><Link className="dropdown-item" to="adtocart.html">SHOPPING CART</Link></li>
+                    <li><Link className="dropdown-item" to="checkout.html">CHECKOUT</Link></li>
+                    <li><Link className="dropdown-item" to="wishlist.html">WISHLIST</Link></li>
+                  </ul>
+                </li>
+                <li className="nav-item dropdown">
+                  <Link className="nav-link text-dark dropdown-toggle" to="#" id="navbarDropdownMenuLinkWomen" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    WOMEN
+                  </Link>
+                  <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkWomen">
+                    <li><Link className="dropdown-item" to="women.html">WOMEN</Link></li>
+                    <li><Link className="dropdown-item" to="adtocart.html">SHOPPING CART</Link></li>
+                    <li><Link className="dropdown-item" to="ordercomplete.html">ORDER COMPLETE</Link></li>
+                    <li><Link className="dropdown-item" to="wishlist.html">WISHLIST</Link></li>
+                  </ul>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-dark" to="about.html">ABOUT</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-dark" to="product.html">PRODUCT</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-dark" to="contact.html">CONTACT</Link>
+                </li>
+              </ul>
+              <div className="col-2 d-flex justify-content-evenly text-end">
+                <i className="fa fa-search text-dark" id="search-icon"></i>
+                <Link to="adtocart.html">
+                  <i className="fa fa-cart-shopping text-dark"> CART <sup className="bg-light p-1 rounded-circle">3</sup></i>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </nav>  
+        <div className="container-fluid h-75 d-flex align-items-center justify-content-center">
+          <div className="col-12 col-lg-6 text-light text-center">
+            <h1 className="display-3 fw-bolder">MEN'S</h1>
+            <h3>SHOES</h3>
+            <h1>COLLECTION</h1>
+            <p>New trending shoes</p>
+            <button type="button" className="btn btn-secondary">SHOP COLLECTION</button>
+          </div>
+        </div>
+      </header>
     </>
   );
 };
