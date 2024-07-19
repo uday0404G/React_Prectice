@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './Component/Navbar'
 import Home from './Pages/Home'
+import MainRout from './Routs/MainRout'
 
 function App() {
 
@@ -11,9 +12,9 @@ function App() {
     <>
    
 
-    <Navbar/>
     
-   <Home/>
+   
+   <MainRout/>
     </>
   )
 }
