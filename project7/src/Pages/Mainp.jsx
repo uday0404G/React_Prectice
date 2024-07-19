@@ -10,7 +10,7 @@ const Product = () => {
     fetch(`http://localhost:3000/Products/`)
       .then((res) => res.json())  
       .then((res) => {
-        setData(res.splice(30,12));
+        setData(res);
       })
       .catch((err) => {
         console.log(err);
@@ -19,7 +19,7 @@ const Product = () => {
   return (
     <>
     
-
+<Navbar/>
       <div class="container-fluid py-5 text-center">
         <h1 class="text-center p-5">BEST SELLERS</h1>
         <div class="container-fluid row">
