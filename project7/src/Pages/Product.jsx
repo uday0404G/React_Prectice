@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Navbar from "../Component/Navbar";
+
 
 const Product = () => {
   const [data, setData] = useState([]);
@@ -10,7 +10,7 @@ const Product = () => {
     fetch(`http://localhost:3000/Products/`)
       .then((res) => res.json())  
       .then((res) => {
-        setData(res);
+        setData(res.splice(30,12));
       })
       .catch((err) => {
         console.log(err);
@@ -18,7 +18,7 @@ const Product = () => {
   }, []);
   return (
     <>
-    <Navbar/>
+ 
 
       <div class="container-fluid py-5 text-center">
         <h1 class="text-center p-5">BEST SELLERS</h1>
