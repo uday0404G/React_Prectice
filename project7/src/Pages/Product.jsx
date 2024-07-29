@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
-import Navbar from "../Component/Navbar";
+
 
 const Product = () => {
   const [data, setData] = useState([]);
@@ -18,7 +18,11 @@ const Product = () => {
   }, []);
   return (
     <>
+<<<<<<< HEAD
     
+=======
+ 
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a
 
       <div class="container-fluid py-5 text-center">
         <h1 class="text-center p-5">BEST SELLERS</h1>

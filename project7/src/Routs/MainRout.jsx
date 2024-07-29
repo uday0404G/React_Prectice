@@ -5,8 +5,13 @@ import SingleProduct from '../Pages/SingleProduct'
 import Signup from '../Pages/Signup'
 import Contact from '../Pages/Contact'
 import PrivateRoute from './PrivateRoute'
+<<<<<<< HEAD
 import Login from '../Pages/Login'
 import Mainp from '../Pages/Mainp'
+=======
+import Mainp from '../Pages/Mainp'
+
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a
 const MainRout = () => {
   return (
     <>
