@@ -24,6 +24,10 @@ const Navbar = () => {
         <NavLink className="nav-link" activeclassName="active" to="/login">Login</NavLink>
 
         </li>
+        <li className="nav-item">
+        <NavLink className="nav-link" activeclassName="active" to="/datacrud">Admin</NavLink>
+
+        </li>
       </ul>
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
