@@ -1,3 +1,4 @@
-export const Inc="inc"
-export const Dec="dec"
-export const Inc5="inc5" 
+export const inc="inc"
+export const dec="dec"
+export const inc2="inc2"
+export const inc5="inc5"
