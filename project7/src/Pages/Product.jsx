@@ -18,21 +18,25 @@ const Product = () => {
   }, []);
   return (
     <>
+<<<<<<< HEAD
+    
+=======
  
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a
 
       <div class="container-fluid py-5 text-center">
         <h1 class="text-center p-5">BEST SELLERS</h1>
         <div class="container-fluid row">
           {data.map((el) => (
             <div class="col-6 col-md-4 col-lg-3 " key={el.id}>
-              <NavLink to={`/Single/${el.id}`} class="col-12 text-decoration-none">
+              <Link to={`/Single/${el.id}`} class="col-12 text-decoration-none">
                 <img src={el.images} alt="" class="img-fluid" />
                 <div class="col-12 py-lg-3 h-auto">
                   <h5 class="text-dark text-center">{el.title}</h5>
                   <p class="text-center text-dark">{el.category.name}</p>
                   <h5 class="text-center text-dark">${el.price}</h5>
                 </div>
-              </NavLink>
+              </Link>
             </div>
           ))}
 

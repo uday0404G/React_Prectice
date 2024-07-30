@@ -1,4 +1,16 @@
 import React from "react";
+<<<<<<< HEAD
+import { Link, NavLink } from "react-router-dom";
+import { useState, useEffect } from "react";
+import Navbar from "../Component/Navbar";
+
+const Product = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:3000/Products/`)
+      .then((res) => res.json())  
+=======
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Navbar from "../Component/Navbar";
@@ -19,6 +31,7 @@ const Mainp = () => {
   useEffect(() => {
     fetch(`http://localhost:3000/Products/`)
       .then((res) => res.json())
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a
       .then((res) => {
         setData(res);
       })
@@ -26,6 +39,29 @@ const Mainp = () => {
         console.log(err);
       });
   }, []);
+<<<<<<< HEAD
+  return (
+    <>
+    
+<Navbar/>
+      <div class="container-fluid py-5 text-center">
+        <h1 class="text-center p-5">BEST SELLERS</h1>
+        <div class="container-fluid row">
+          {data.map((el) => (
+            <div class="col-6 col-md-4 col-lg-3 " key={el.id}>
+              <Link to={`/Single/${el.id}`} class="col-12 text-decoration-none">
+                <img src={el.images} alt="" class="img-fluid" />
+                <div class="col-12 py-lg-3 h-auto">
+                  <h5 class="text-dark text-center">{el.title}</h5>
+                  <p class="text-center text-dark">{el.category.name}</p>
+                  <h5 class="text-center text-dark">${el.price}</h5>
+                </div>
+              </Link>
+            </div>
+          ))}
+
+          <a type="button" class="btn btn-secondary rounded-pill m-3">
+=======
 
   const handleFilter = (e) => {
     setFilter({
@@ -135,6 +171,7 @@ const Mainp = () => {
             </div>
           ))}
           <a type="button" className="btn btn-secondary rounded-pill m-3">
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a
             Shop All Products
           </a>
         </div>
@@ -143,4 +180,8 @@ const Mainp = () => {
   );
 };
 
+<<<<<<< HEAD
+export default Product;
+=======
 export default Mainp;
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a

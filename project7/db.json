@@ -978,6 +978,12 @@
       "password": "1"
     },
     {
+<<<<<<< HEAD
+      "id": "e53f",
+      "username": "1",
+      "email": "hemangsolanki10@gmail.com",
+      "password": "11"
+=======
       "id": "243a",
       "username": "uday",
       "email": "udaylashkari2@gmail.com",
@@ -988,6 +994,7 @@
       "username": "uday",
       "email": "uday@gmail.com",
       "password": "12"
+>>>>>>> c66129b96c9c2ee603f97558c748c105891bc00a
     }
   ]
 }

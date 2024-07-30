@@ -1,5 +1,4 @@
 import React from 'react'
-import Feachers from './Feachers'
 import Footer from './Footer'
 import Fect from './Fect'
 import Product from './Product'
@@ -15,7 +14,7 @@ const Home = () => {
           <Header/>
 
         </header>
-        <Feachers/>
+       
         <Product/>
       <Brands/>
         <Fect/>
