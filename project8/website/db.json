@@ -1,0 +1,21 @@
+{
+  "Products": [
+    {
+      "id": "bd2c",
+      "title": "dsadasdas",
+      "price": "dasdsadasdrerew",
+      "image": "sadsad",
+      "description": "tewr",
+      "category": "men's clothing"
+    }
+  ],
+  "UserData": [
+    {
+      "id": "43b0",
+      "username": "uday0404g",
+      "Email": "udaylashkari2@gmail.com",
+      "Password": "12",
+      "confirmPassword": "12"
+    }
+  ]
+}

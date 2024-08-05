@@ -1,0 +1,6 @@
+export const ADD_Product="ADD_Product" 
+export const Load="Load"
+export const Error="Error"
+export const Show="ShowProduct"
+export const Delete="DeleteProduct"
+export const Edit="edit"
