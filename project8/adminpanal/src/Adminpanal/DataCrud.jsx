@@ -24,7 +24,7 @@ const DataCrud = () => {
         setProdata({...Prodata,[name]:value})
     }
     const handalSubmit=(e)=>{
-        e.preventDefault()
+        // e.preventDefault()
         
        
             isEdit? Editdata(dispatch)(editid,Prodata):
@@ -67,6 +67,7 @@ const DataCrud = () => {
             <option value="jewelery">jewelery</option>
             <option value="electronics">electronics</option>
             <option value="women's clothing">women's clothing</option>
+            <option value="Fruits, Organic">Fruits, Organic</option>
             </select>
             
         <label for="image">Image URL:</label>

@@ -1,21 +1,61 @@
 {
   "Products": [
     {
-      "id": "bd2c",
-      "title": "dsadasdas",
-      "price": "dasdsadasdrerew",
-      "image": "sadsad",
-      "description": "tewr",
-      "category": "men's clothing"
+      "id": "40ae",
+      "title": "Strawberry",
+      "price": "100",
+      "image": "../public/img/products/product-img-1.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
+      "category": "Fruits, Organic"
+    },
+    {
+      "id": "6fea",
+      "title": "Berry",
+      "price": "70",
+      "image": "../public/img/products/product-img-2.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
+      "category": "Fruits, Organic"
+    },
+    {
+      "id": "201d",
+      "title": "Lemon",
+      "price": "35",
+      "image": "../public/img/products/product-img-3.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum",
+      "category": "Fruits, Organic"
+    },
+    {
+      "id": "bddd",
+      "title": "Avocado",
+      "price": "50",
+      "image": "../public/img/products/product-img-4.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
+      "category": "Fruits, Organic"
+    },
+    {
+      "id": "64a3",
+      "title": "Green Apple",
+      "price": "45",
+      "image": "../public/img/products/product-img-5.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum.",
+      "category": "Fruits, Organic"
+    },
+    {
+      "id": "bdca",
+      "title": "Strawberry",
+      "price": "80",
+      "image": "../public/img/products/product-img-6.jpg",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint dignissimos, rem commodi cum voluptatem quae reprehenderit repudiandae ea tempora incidunt ipsa, quisquam animi perferendis eos eum modi! Tempora, earum",
+      "category": "Fruits, Organic"
     }
   ],
   "UserData": [
     {
-      "id": "43b0",
+      "id": "0bea",
       "username": "uday0404g",
       "Email": "udaylashkari2@gmail.com",
-      "Password": "12",
-      "confirmPassword": "12"
+      "Password": "123",
+      "confirmPassword": "123"
     }
   ]
 }
