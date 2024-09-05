@@ -4,14 +4,7 @@ import { Link, NavLink } from 'react-router-dom';
 const Admin = () => {
   return (
     <div className="container-fluid position-relative d-flex p-0">
-      
-      
-      
-      
-
-      <div className="content">
-      
-        
+      <div className="content"> 
         <div className="container-fluid pt-4 px-4">
           <div className="row g-4">
             <div className="col-sm-6 col-xl-3">

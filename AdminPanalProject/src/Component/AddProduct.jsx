@@ -14,7 +14,7 @@ const AddProduct = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         const productData = { title, description, price: parseFloat(price), image };
-        try {
+        try {   
             await addDoc(productCollection, productData);
             alert('Product added successfully');
             navigate('/Product');

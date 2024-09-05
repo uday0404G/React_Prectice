@@ -29,9 +29,8 @@ function Product() {
   useEffect(() => {
     getProducts();
   }, []);
-console.log(
-  products
-);
+
+
 
   const handleDelete = async (id) => {
     if (window.confirm('Are you sure you want to delete this product?')) {
@@ -46,14 +45,28 @@ console.log(
     }
   };
 
+    const [search,setSearch]=useState("")
+
+    const filteredProducts = products.filter((product) =>
+      product.title.toLowerCase().includes(search.toLowerCase())
+    );
+
+      
+    
+
+
   if (loading) return <div>Loading products...</div>;
+
+
+
 
   return (
     <div className="container">
       <h1>Product Page</h1>
+      <input type="search" placeholder='search here ' onChange={(e)=>setSearch(e.target.value)}   value={search}/><br /><br /><br />
       <div className="product-list">
-        {products.length ? (
-          products.map((product) => (
+        {filteredProducts.length ? (
+          filteredProducts.map((product) => (
             <div key={product.id} className="product-card">
               <img src={product.image} alt={product.title} />
               <div className="product-card-content">
